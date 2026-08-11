@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="project_adding_to_array"/>
+        <attribute name="authors" value="sudem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-11 12:52:42 PM"/>
+        <attribute name="created" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjUtMTItMDk7MTI6MTA6NTMgQU07Mjg0OQ=="/>
+        <attribute name="edited" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjYtMDgtMTE7MTI6NTI6NDIgUE07MjsyOTc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, num, nc, w" type="Integer" array="False" size=""/>
+            <declare name="nums" type="Integer" array="True" size="100"/>
+            <output expression="&quot;Number count: &quot;" newline="True"/>
+            <input variable="nc"/>
+            <for variable="i" start="0" end="nc-1" direction="inc" step="1">
+                <output expression="i+1 &amp; &quot;. number: &quot;" newline="True"/>
+                <input variable="nums[i]"/>
+            </for>
+            <output expression="&quot;First array: &quot;" newline="True"/>
+            <for variable="i" start="0" end="nc-1" direction="inc" step="1">
+                <output expression="&quot;nums [&quot; &amp; i &amp; &quot;]: &quot; &amp; nums[i] &amp; &quot; &quot;" newline="True"/>
+            </for>
+            <output expression="&quot;Where do you want to add a number: &quot;" newline="True"/>
+            <input variable="w"/>
+            <output expression="&quot;Number to put: &quot;" newline="True"/>
+            <input variable="num"/>
+            <for variable="i" start="nc-1" end="w-1" direction="dec" step="1">
+                <assign variable="nums[i+1]" expression="nums[i]"/>
+            </for>
+            <assign variable="nums [w-1]" expression="num"/>
+            <output expression="&quot;New array: &quot;" newline="True"/>
+            <for variable="i" start="0" end="nc" direction="inc" step="1">
+                <output expression="&quot;nums [&quot; &amp; i &amp; &quot;]: &quot; &amp; nums[i] &amp; &quot; &quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
