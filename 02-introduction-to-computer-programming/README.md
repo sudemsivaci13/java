@@ -1,3 +1,5 @@
 # 02 - Introduction to Computer Programming
 
-This module contains projects and exercises developed during the *Introduction to Computer Programming* course, covering core Java programming concepts, conditional logic, loops, arrays, and basic algorithmic problem-solving.
+This directory contains Java projects and exercises developed during my **1st semester Introduction to Computer Programming course**.
+
+It covers foundational Java programming concepts, including control flow statements, conditional logic, loops, multi-dimensional arrays, and core algorithmic problem-solving.
