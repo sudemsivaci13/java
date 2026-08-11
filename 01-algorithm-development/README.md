@@ -1,6 +1,5 @@
 # 01 - Algorithm Development
 
-This directory contains algorithmic logic diagrams designed in **Flowgorithm** (`.fprg`) alongside their direct equivalent **Java** implementations from the 1st semester coursework.
+This directory contains Flowgorithm flowchart diagrams (`.fprg`) and their corresponding Java implementations created during my **1st semester Algorithm Development course**.
 
-### 🎯 Purpose
-To demonstrate structured problem-solving, visual flowchart modeling, and translating algorithmic logic directly into functional Java code.
+It demonstrates core problem-solving logic, structured algorithm design, and the process of translating visual flowcharts into functional Java code.
