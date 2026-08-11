@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="project_bmi_calculation"/>
+        <attribute name="authors" value="sudem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-11 12:22:34 PM"/>
+        <attribute name="created" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjUtMTEtMjU7MTE6MjM6MzIgQU07Mjg0Ng=="/>
+        <attribute name="edited" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjUtMTEtMjU7MTE6MjU6MDcgQU07MjtzdWRlbTtTVURFTS1NQUNCT09LLUE7MjAyNS0xMS0yNTsxMTowMDowMSBBTTt3NHMxLmZwcmc7NjcyNg=="/>
+        <attribute name="edited" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjYtMDgtMTE7MTI6MjI6MzQgUE07NDsyOTc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="w, h, bmi" type="Real" array="False" size=""/>
+            <output expression="&quot;Your weight: &quot;" newline="True"/>
+            <input variable="w"/>
+            <output expression="&quot;Your height: &quot;" newline="True"/>
+            <input variable="h"/>
+            <assign variable="bmi" expression="w/(h^2)"/>
+            <output expression="bmi" newline="True"/>
+            <if expression="bmi&lt;18.5">
+                <then>
+                    <output expression="&quot;Underweight.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bmi &lt; 25.0">
+                        <then>
+                            <output expression="&quot;Healthy.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="bmi &lt; 30.0">
+                                <then>
+                                    <output expression="&quot;Overweight.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="bmi &lt; 35.0">
+                                        <then>
+                                            <output expression="&quot;Grade 1 obesity.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="bmi &lt; 40.0">
+                                                <then>
+                                                    <output expression="&quot;Grade 2 obesity.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Grade 3 obesity.&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
