@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="project_sorting"/>
+        <attribute name="authors" value="sudem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-11 12:58:31 PM"/>
+        <attribute name="created" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjYtMDEtMTI7MDc6Mjc6MTMgUE07Mjg2NQ=="/>
+        <attribute name="edited" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjYtMDEtMTI7MDc6Mjc6MTcgUE07MTtzdWRlbTtTVURFTS1NQUNCT09LLUE7MjAyNi0wMS0wNzswOTowNTo1MyBBTTtwcm9qZWN0X3NvcnRpbmc7NzU3OQ=="/>
+        <attribute name="edited" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjYtMDgtMTE7MTI6NTg6MzEgUE07MjsyOTgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, k, l, temp" type="Integer" array="False" size=""/>
+            <declare name="nums" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="(i+1) &amp; &quot;. number:&quot;" newline="True"/>
+                <input variable="nums[i]"/>
+            </for>
+            <for variable="j" start="0" end="3" direction="inc" step="1">
+                <for variable="k" start="0" end="3" direction="inc" step="1">
+                    <if expression="nums[k]&gt;nums[k+1]">
+                        <then>
+                            <assign variable="temp" expression="nums[k]"/>
+                            <assign variable="nums[k]" expression="nums[k+1]"/>
+                            <assign variable="nums[k+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="l" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;nums[&quot; &amp; l &amp; &quot;] = &quot; &amp; nums[l]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
