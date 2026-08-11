@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="project_star_pyramid"/>
+        <attribute name="authors" value="sudem"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-11 12:39:13 PM"/>
+        <attribute name="created" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjUtMTEtMDg7MTA6MTM6MDEgUE07Mjg1Ng=="/>
+        <attribute name="edited" value="c3VkZW07U1VERU0tTUFDQk9PSy1BOzIwMjYtMDgtMTE7MTI6Mzk6MTMgUE07MzsyOTgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, r" type="Integer" array="False" size=""/>
+            <output expression="&quot;Number of pyramid rows: &quot;" newline="True"/>
+            <input variable="r"/>
+            <for variable="i" start="1" end="r" direction="inc" step="1">
+                <for variable="j" start="1" end="i" direction="inc" step="1">
+                    <output expression="&quot;*&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
